@@ -6,7 +6,7 @@
     Copyright © 2021 "Ali Kutaiba Hamza" "Faruq Azizi" "Lien Hieu Luu"
 -->
 
-<!--
+<!-- Inspirations källa är hämtat från https://www.w3schools.com/howto/howto_css_contact_form.asp
 
 -->
 
@@ -47,20 +47,22 @@
     <h2>Kontakta oss</h2>
 
     <div class="container">
-        <form action="/action_page.php">
+        <!--Ingen funktion är tillagd i form action -->
+        <form action="" method="get">
             <h3><label for="fname">Förnamn</label></h3>
-            <input type="text" id="fname" name="firstname" placeholder="Ditt förnamn..">
+            <input type="text" id="fname" name="firstname" placeholder="Ditt förnamn">
 
             <h3><label for="lname">Efternamn</label></h3>
-            <input type="text" id="lname" name="lastname" placeholder="Ditt efternamn..">
+            <input type="text" id="lname" name="lastname" placeholder="Ditt efternamn">
 
 
-            <h3><label for="country">Email adress</label></h3>
-            <input type="text" id="email" name="email@.com" placeholder="exampel@.com ">
+            <h3><label for="email">Email adress</label></h3>
+            <input type="text" id="email" name="Email" placeholder="exampel@gmail.com ">
 
 
             <h3><label for="subject">Meddelande</label></h3>
-            <textarea id="subject" name="subject" placeholder="" style="height:200px ;width:350px"></textarea>
+            <textarea id="subject" name="Subject" placeholder="" ></textarea>
+
 
             <br><br>
             <input type="submit" value="Skicka">
