@@ -1,0 +1,148 @@
+/* 
+    Kommentaren, förklaringar kring vad de olika kod för och betyder, 
+    gäller i just för den här CSS. 
+    Det äinnebär att de kan betyda något annat i gåt annat sammanhag 
+*/
+
+
+/*
+    Gäller hela webbsidan * innebär hela sidan
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+}
+
+
+/* Create three equal columns that sits next to each other */
+
+.column {
+    flex: 33.33%;
+    padding: 5px;
+}
+
+
+/* 
+    body hela kroppen för sidan: 
+    positon, placering är i center för varje enhet kommer in
+    margin: auto; är för att göra innehåler center
+*/
+
+body {
+    /*background-position: center;
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;*/
+    max-width: 980px;
+    margin: auto;
+}
+
+
+/*
+
+    Här är det ändringar för loggan:
+    display säger till att det blir ovanpå meny
+    position gör att det blir stabild oavsett hur man zoomar in 
+    de andra för för storlek och hur mycket till höger
+*/
+
+.logo img {
+    display: block;
+    position: relative;
+    top: 0;
+    height: 100px;
+    right: 50px;
+}
+
+
+/* 
+    bakgrunds färgen för meny samt placera innehållet i center
+*/
+
+.menu {
+    background: rgb(0, 12, 42);
+    text-align: center;
+}
+
+
+/* 
+    <ul> tag är en oordnad (punkt) listan
+    tillsammans med <li> kommer nedan betydelsen
+    i detta fall dessa nedan används för:
+    display används för att ange i samma rad eller line och fast
+    list-style är för att ange numerisk, puntering, I II III med mera 
+    men här väljer vi ingen
+    color är färgen för texten 
+*/
+
+.menu ul {
+    display: inline-flex;
+    list-style: none;
+    color: rgb(255, 230, 0);
+}
+
+
+/* 
+    <li> tag är ett listobjekt i ul
+    with "i detta fall" skapar en bered, rum med 150 px.kan vara så att det bortaget, utan ändra i kommentare, ifall vi glömmer 
+    Detta används för mellan rum i detta fall
+    Padding lämnar mellanrum kring sig själv 
+    margin lämnar mellanrum från nästa element
+*/
+
+.menu ul li {
+    margin: 15px;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/*
+    för texter i meny
+    egenskaperna kringen texten styr här nedan
+    decoratin för att inte har under eller över streck
+*/
+
+.menu ul li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffff;
+}
+
+
+/*
+    för den meny som då är aktiv och/eller musen över den
+    hover anger just när musen över eller den aktivt
+    border-radius runda kanter än raka kan man se det som ram runt om
+*/
+
+.aktivvalimeny,
+.menu ul li:hover {
+    background: darkgoldenrod;
+    border-radius: 5px;
+}
+
+
+/*
+   Gäller alla ikoner 
+*/
+
+.menu .lni {
+    margin-right: 9px;
+}
+
+.sort {
+    max-width: 980px;
+    margin: auto;
+}
+
+
+/*
+   för sorteringen
+*/
