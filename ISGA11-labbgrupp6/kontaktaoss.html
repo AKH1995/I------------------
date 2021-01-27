@@ -1,0 +1,72 @@
+<!--
+    "Ali Kutaiba Hamza" "Faruq Azizi" "Lien Hieu Luu"
+	2021
+	Lab 1 HTML & CSS 
+	@author: "Ali Kutaiba Hamza" "Faruq Azizi" "Lien Hieu Luu"
+    Copyright © 2021 "Ali Kutaiba Hamza" "Faruq Azizi" "Lien Hieu Luu"
+-->
+
+<!--
+
+-->
+
+
+<!--
+
+-->
+
+<!DOCTYPE html>
+<html lang="sv">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Sveriges bästa bilmarknadsplats - hitta fynd &amp; sälj snabbt!">
+<title>Sveriges bästa bilmarknadsplats</title>
+<link rel="stylesheet" href="style/styleforindex.css">
+<link rel="stylesheet" href="style/styleforannonssida.css">
+<link rel="stylesheet" href="style/styleforkontaktaoss.css">
+<script src="style/mapjs.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIwzALxUPNbatRBj3Xi1Uhp0fFzwWNBkE&callback=initMap&libraries=&v=weekly" defer></script>
+
+
+<!-- Ikonerna hämtat från lineicons.com free to use -->
+<link rel="stylesheet" href="https://cdn.lineicons.com/2.0/LineIcons.css">
+<!-- Ikonerna hämtat frånhttps://cdn4.vectorstock.com/i/1000x1000/64/63/golden-car-logo-vector-1736463.jpg free to use -->
+</head>
+
+
+<Body>
+    <div class="menu">
+        <ul>
+            <div class="logo"> <img src="https://inapatir.sirv.com/Images/1736463%20(2).png" alt="Logo" /> </div>
+            <li><i class="lni lni-car" style="font-size: 22px"></i><a href="Index.html">Hem</a></li>
+            <li><i class="lni lni-trello" style="font-size: 22px"></i> <a href="Annons.html">Annnonser</a></li>
+            <li><i class="lni lni-headphone-alt" style="font-size: 22px"></i> <a href="kontaktaoss.html">Kontakta oss</a></li>
+        </ul>
+    </div>
+
+    <h2>Kontakta oss</h2>
+
+    <div class="container">
+        <form action="/action_page.php">
+            <h3><label for="fname">Förnamn</label></h3>
+            <input type="text" id="fname" name="firstname" placeholder="Ditt förnamn..">
+
+            <h3><label for="lname">Efternamn</label></h3>
+            <input type="text" id="lname" name="lastname" placeholder="Ditt efternamn..">
+
+
+            <h3><label for="country">Email adress</label></h3>
+            <input type="text" id="email" name="email@.com" placeholder="exampel@.com ">
+
+
+            <h3><label for="subject">Meddelande</label></h3>
+            <textarea id="subject" name="subject" placeholder="" style="height:200px ;width:350px"></textarea>
+
+            <br><br>
+            <input type="submit" value="Skicka">
+        </form>
+    </div>
+
+</Body>
+
+</html>
